@@ -1,4 +1,15 @@
 jQuery(document).ready(function($){
+
+// header code
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll >= 100) {
+	$(".main-menu").addClass("stickey");
+    } else {
+        $(".main-menu").removeClass("stickey");
+    }
+});
+
 gsap.set(".cursorA", { xPercent: -50, yPercent: -50 });
 var CA = document.querySelector(".cursorA");
 window.addEventListener("mousemove", (e) => {
@@ -17,6 +28,7 @@ $(document).ready(function () {
 			$(".cursorA").animate({
 				width: "13px",
 				height: "13px"
+				
 			});
 		}
 	);
