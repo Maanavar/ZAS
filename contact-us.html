@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="assets/images/favicon.ico" sizes="32x32" />
+        <title>PD StartUp</title>
+        
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    </head>
+    <nav class="navbar main-menu navbar-expand-xl fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo.svg" class="img-fluid" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            
+            <div class="offcanvas offcanvas-end bg-secondary" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a href="index" class="navbar-brand offcanvas-title text-light" d="offcanvasNavbarLabel">
+                        <img src="assets/images/logo.svg" class="img-fluid" alt="logo">
+                    </a>
+                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <div class="offcanvas-body">          
+                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li>
+                        <a class="nav-item nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                What We Do
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="pd-startup.html">PD for Startup</a></li>
+                                <li><a class="dropdown-item" href="pd-enterprise.html">PD for Enterprise</a></li>
+                                <li><a class="dropdown-item" href="dedicated-team.html">Dedicated Team </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        <a class="nav-item nav-link" href="who-we-are.html">Who We Are</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="theam-button red-btn">Let’s talk</a>
+                        </li>
+                    </div>
+                </div>
+                <div id="navbar" class="overlay">
+                    <a href="javascript:void(0);" onclick="closeNavbar()" class="close">+</a>
+                    <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact-us.html">Contact</a>
+                    </div>
+                    <div class="contact-menu d-flex justify-content-between">
+                        <div class="menu-contact">
+                            <a href=""><i class="fa fa-envelope"></i> hello@zas.digital </a><br>
+                            <a href=""><i class="fa fa-phone"></i> +91 96005 77410, +1 (979) 900-2589</a>
+                        </div>
+                        <div class="social-media align-self-center">
+                            <ul>
+                                <li><a href=""><img src="assets/images/linkedin.png" class="img-fluid" alt="linkedin"></a></li>
+                                <li><a href=""><img src="assets/images/twitter.png" class="img-fluid" alt="twitter"></a></li>
+                                <li><a href=""><img src="assets/images/fb.png" class="img-fluid" alt="facebook"></a></li>
+                                <li><a href=""><img src="assets/images/insta.png" class="img-fluid" alt="insta"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <span class="open" onclick="openNavbar()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </span>
+        </div>
+    </nav>
+    <body>
+        <div class="cursorA"></div>
+        <section class="contact-form">
+            <div class="container">
+                <form>
+                    <div class="col-md-5 mx-auto mb-5">
+                        <h3 class="text-center">Let’s talk</h3>
+                        <p class="text-center fw-600">Fill out the form or write to us : <a href="mailto:hello@zas.digital" class="text-black text-decoration-none">hello@zas.digital</a></p>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Number <span>(optional)</span></label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Company <span>(optional)</span></label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>How did you hear about us? <span>(optional)</span></label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                    </div>
+                    <div class=" choose-option ">
+                        <h3 class="text-center ">What Skill do you need?</h3>
+                        <div class="row">
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option1" name="radio-group" >
+                                <label for="option1">Product Strategy</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option2" name="radio-group" >
+                                <label for="option2">UX/UI Design</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option3" name="radio-group" >
+                                <label for="option3">Mobile Development</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option4" name="radio-group" >
+                                <label for="option4">Web Development</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option5" name="radio-group" >
+                                <label for="option5">AR/XR</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option6" name="radio-group" >
+                                <label for="option6">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mx-auto choose-option ">
+                        <h3 class="text-center">What is the budget of your project?</h3>
+                        <div class="row">
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option7" name="radio-group1" >
+                                <label for="option7">Less than $50,000</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option8" name="radio-group1" >
+                                <label for="option8">$50,000 - $200,000</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option9" name="radio-group1" >
+                                <label for="option9">$200,000 - $500,000</label>
+                            </div>
+                            <div class="col text-center mb-4">
+                                <input type="radio" id="option10" name="radio-group1" >
+                                <label for="option10">$500,000 +</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" choose-option ">
+                        <h3 class="text-center">You can also uplaod a file</h3>
+                        <div class="col-md-3 mx-auto text-center mb-4">
+                            <input type="file" class="custom-file-input " name="file">
+                            <label><span>Max file size 10MB</span></label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button"  class="theam-button black-btn border-0 ">Submit to send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="bg-black">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="assets/images/footer-logo.svg" class="img-fluid" alt="footer-logo">
+                        </div>
+                        <div class="col-md-4 border-right">
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <img src="assets/images/location.png" class="img-fluid" alt="location">
+                                </div>
+                                <div>
+                                    <p class="text-white mb-0">24710 Madison CT, Farmington<br> Hills, Michigan - 48335</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <img src="assets/images/location.png" class="img-fluid" alt="location">
+                                </div>
+                                <div>
+                                    <p class="text-white mb-0">9th Avenue, Ashok Nagar, Chennai,<br> Tamil Nadu, India 600083</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 ms-auto ">
+                            <h6 class="text-white mb-4">Want to discuss your requirements with us? </h6>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <img src="assets/images/mail.png" class="img-fluid" alt="location">
+                                </div>
+                                <div>
+                                    <a href="mailto:hello@zas.digital">hello@zas.digital</a>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <img src="assets/images/call.png" class="img-fluid" alt="location">
+                                </div>
+                                <div>
+                                    <a href="tel:+91 96005 77410">+91 96005 77410 , </a>
+                                    <a href="tel:+1 (979) 900-2589">+1 (979) 900-2589</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom pb-4">
+                <div class="container-fluid px-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Copyright 2022 Zaxis Software Solutions LLP</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <ul>
+                                <li><p>Get in touch with us</p></li>
+                                <li><a href="#"><img src="assets/images/linkedin.png" class="img-fluid" alt="linkedin"></a></li>
+                                <li><a href="#"><img src="assets/images/twitter.png" class="img-fluid" alt="twitter"></a></li>
+                                <li><a href="#"><img src="assets/images/fb.png" class="img-fluid" alt="facebook"></a></li>
+                                <li><a href="#"><img src="assets/images/insta.png" class="img-fluid" alt="Insta"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/gsap.min.js"></script>
+    </body>
+</html>
