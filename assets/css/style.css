@@ -25,7 +25,7 @@ body{
     font-weight: 400;
     transition: all 1.3s ease-out;
 }
-.paragraph{font-size: 18px;line-height: 1.6;}
+.paragraph{font-size: 18px !important;line-height: 1.6;}
 ul{padding: 0;margin: 0;}
 h1,h2,h3,h4,h5,h6{font-weight: 700;}
 h1{font-size: 54px;line-height: 75px;}
@@ -257,3 +257,41 @@ footer a{
 .faq-items .accordion-item button{background-color: transparent;font-size: 18px;padding: 0.5rem 1.5rem;color: var(--black-color);}
 .faq-items .accordion-item .accordion-body{padding-top: 0;}
 .faq-items .accordion-item .accordion-body p{opacity: 0.5;}
+
+.service-path:after {
+    content: '';
+    width: 70%;
+    height: 1px;
+    background: var(--red-color);
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.service-path .experts{position: relative;}
+.path-top:after{top:0;width: 77.5%;}
+.service-path.path-bottom .experts:after,.service-path.path-top .experts::before{
+    content: '';
+    height: 1.5rem;
+    width: 1px;
+    background: var(--red-color);
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.service-path.path-top:before {
+    content: '';
+    width: 1px;
+    height: 1.5rem;
+    position: absolute;
+    background: red;
+    top: -1.5rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.service-path.path-bottom .experts:after{bottom: -1.5rem;}
+.service-path.path-top .experts::before{top:-1.5rem}
