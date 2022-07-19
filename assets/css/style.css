@@ -199,11 +199,26 @@ footer a{
 .who-we-are{margin-bottom: 2rem;}
 .who-we-are p{opacity: 0.5;}
 
+@keyframes cursor {
+    from { border-color: var(--black-color); }
+    to { border-color: transparent; }
+}
+.typewriter span {
+    /* border-right: solid var(--black-color) 10px;  */
+    position: relative;
+    animation: cursor 1s ease-in-out infinite;
+}
+.typewriter span:after{
+    content: '_';
+    width: 2rem;
+    height: 10rem;
+    color: var(--black-color);
+}
 .multi-platform{padding: 5rem 0;}
 .primary-card{
     background: var(--light-blue-color);
     border: 1px solid #F9FBFF;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px;
     padding: 1.5rem;height: 100%;
 }
 .primary-card h4 {
@@ -254,7 +269,7 @@ footer a{
 .faq-items .accordion-item:not(:last-child){
     border-bottom: 1px solid #D9D9D9;
 }
-.faq-items .accordion-item button{background-color: transparent;font-size: 18px;padding: 0.5rem 1.5rem;color: var(--black-color);}
+.faq-items .accordion-item button{background-color: transparent;font-size: 18px;line-height:32px;padding: 0.5rem 1.5rem;color: var(--black-color);}
 .faq-items .accordion-item .accordion-body{padding-top: 0;}
 .faq-items .accordion-item .accordion-body p{opacity: 0.5;}
 
@@ -404,3 +419,111 @@ footer a{
 }
 .team-card h5{max-width: 70%;margin: auto;}
 .team-card p{font-size: 14px;}
+
+/* Steps start up */
+.process-steps{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    background: url(../images/path-line.png);
+    background-repeat: no-repeat;
+    background-size: 75% 85%;
+    background-position-x: 45%;
+    background-position-y: 15%;
+}
+.step-block{
+    background: #FFF8F8;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 50%;
+}
+.step-block p{
+    font-size: 14px;
+}
+.step-block.right-step {
+    margin-left: auto;
+    margin-top: -4rem;
+}
+.step-block h2 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+.work-card p{font-size: 14px;}
+table thead{
+    background: var(--black-color);
+}
+table tr{border: 1px solid var(--black-color)}
+table thead tr th{ color: var(--white-color);border: 1px solid var(--black-color);}
+table tr th,table tr td{padding: 0.8rem 1.2rem !important;font-size: 18px;font-weight: 400;color: var(--black-color);border: 1px solid var(--black-color)}
+
+
+/* media queries starts */
+@media(max-width:991px){
+    h1 { font-size: 46px; line-height: 65px;}
+    h3 {font-size: 32px;line-height: 48px;}
+    .main-banner.vh-100 {
+        height: 100% !important;
+        padding: 12rem 0 5rem;
+    }
+    .believe-banner img {
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+    .team-card h5{max-width: 100%;}
+    .step-block.right-step{margin-top:3rem;margin-bottom: 3rem;}
+    .path-top:after{    width: 83.5%;}
+}
+@media(max-width:767px){
+    .font-20 {font-size: 16px;}
+    .main-banner.vh-100{padding: 8rem 0 5rem;}
+    .main-banner img{margin-top: 2rem;}
+    h1 {font-size: 36px;line-height: 52px;}
+    h2 {font-size: 30px;line-height: 46px;}
+    h3 {font-size: 26px;line-height: 42px;}
+    h5 {font-size: 20px;}
+    .multi-platform {padding: 2rem 0;}
+    .multi-platform img{width: 8rem;margin-bottom: 0 !important;}
+    .platform-item,.certify img{margin-bottom: 2rem;}
+    .faq-items{padding: 1rem 0;}
+    .footer-top {
+        padding: 5rem 0 2rem;
+    }
+    .main-banner h1 br{display: block;}
+    br{display: none;}
+    
+    .step-block{
+        width: 280px;
+        height: 280px;margin: auto;
+    }
+    .step-block.right-step{margin:3rem auto;}
+    .step-block h2{font-size: 24px;}
+    .step-block img {
+        width: 3rem;
+        margin-bottom: 1rem !important;
+    }
+    .step-block p {
+        font-size: 10px;
+    }
+    .step-block.right-step:last-child{margin-bottom: 0;}
+    .process-steps{background: none;}
+    /* .service-path.path-top {
+        margin-left: 4rem !important;
+    }
+    .service-path.path-top .experts::before {
+        top: 0;
+        right: unset;
+        bottom: 0;
+        width: 2rem;
+        height: 1px;
+        left: -2rem;
+    }
+    .path-top:after {
+        width: 1px;
+        height: 88%;
+        left: -2rem;
+        right: unset;
+    } */
+}
