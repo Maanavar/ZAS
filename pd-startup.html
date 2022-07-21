@@ -14,60 +14,75 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     </head>
-    <nav class="navbar main-menu navbar-expand-xl fixed-top">
-        <div class="container">
+    <div class="cursorA"></div>
+    <header>
+        <nav class="navbar main-menu navbar-expand-lg fixed-top">
+            <div class="container">
             <a href="index.html" class="navbar-brand">
                 <img src="assets/images/logo.svg" class="img-fluid" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-nav justify-content-end flex-grow-1 pe-3 show-desktop">
+                <li>
+                <a class="nav-item nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="dropdown ">
+                    <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        What We Do
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="pd-startup.html">PD for Startup</a></li>
+                        <li><a class="dropdown-item" href="pd-enterprise.html">PD for Enterprise</a></li>
+                        <li><a class="dropdown-item" href="dedicated-team.html">Dedicated Team </a></li>
+                    </ul>
+                </li>
+                <li>
+                <a class="nav-item nav-link" href="who-we-are.html">Who We Are</a>
+                </li>
+                <li>
+                    <a href="contact-us.html" class="theam-button red-btn"><span>Let’s talk</span></a>
+                </li>
+            </div>
+            <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
             
-            <div class="offcanvas offcanvas-end bg-secondary" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <a href="index" class="navbar-brand offcanvas-title text-light" d="offcanvasNavbarLabel">
-                        <img src="assets/images/logo.svg" class="img-fluid" alt="logo">
-                    </a>
-                    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
-                </div>
-                <div class="offcanvas-body">          
-                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li>
-                        <a class="nav-item nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="dropdown ">
-                            <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                What We Do
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="pd-startup.html">PD for Startup</a></li>
-                                <li><a class="dropdown-item" href="pd-enterprise.html">PD for Enterprise</a></li>
-                                <li><a class="dropdown-item" href="dedicated-team.html">Dedicated Team </a></li>
-                            </ul>
-                        </li>
-                        <li>
-                        <a class="nav-item nav-link" href="who-we-are.html">Who We Are</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" class="theam-button red-btn">Let’s talk</a>
-                        </li>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header d-block text-end">
+                <button type="button" class="btn-close text-reset p-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">  
+                <div class="row h-100">
+                    <div class="align-self-top">  
+                        <div class="overlay-content">
+                            <a href="index.html">Home</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="services.html">Services</a>
+                            <a href="about.html">About</a>
+                            <a href="contact-us.html">Contact</a>
+                        </div>
+                        <div class=" justify-content-end flex-grow-1 show-responsive">
+                            <li class="dropdown ">
+                                <a href="" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                    What We Do
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="pd-startup.html">PD for Startup</a></li>
+                                    <li><a class="dropdown-item" href="pd-enterprise.html">PD for Enterprise</a></li>
+                                    <li><a class="dropdown-item" href="dedicated-team.html">Dedicated Team </a></li>
+                                </ul>   
+                            </li>
+                            <li> <a class="nav-item nav-link" href="who-we-are.html">Who We Are</a> </li>
+                            
+                        </div>
                     </div>
-                </div>
-                <div id="navbar" class="overlay">
-                    <a href="javascript:void(0);" onclick="closeNavbar()" class="close">+</a>
-                    <div class="overlay-content">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="services.html">Services</a>
-                        <a href="about.html">About</a>
-                        <a href="contact-us.html">Contact</a>
-                    </div>
-                    <div class="contact-menu d-flex justify-content-between">
+                    <div class="contact-menu align-self-end d-md-flex justify-content-between">
                         <div class="menu-contact">
-                            <a href=""><i class="fa fa-envelope"></i> hello@zas.digital </a><br>
-                            <a href=""><i class="fa fa-phone"></i> +91 96005 77410, +1 (979) 900-2589</a>
+                            <a href="">hello@zas.digital </a><br>
+                            <a href="">+91 96005 77410, +1 (979) 900-2589</a>
                         </div>
                         <div class="social-media align-self-center">
                             <ul>
@@ -79,16 +94,10 @@
                         </div>
                     </div>
                 </div>
-            </div>  
-            <span class="open" onclick="openNavbar()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </span>
+            </div>
         </div>
-    </nav>
+    </header>
     <body>
-        <div class="cursorA"></div>
         <section class="main-banner vh-100">
             <div class="container h-100">
                 <div class="d-flex align-self-center h-100">
@@ -97,7 +106,7 @@
                             <span class="font-20 text-uppercase mb-3 d-block">You dream it, we build it </span>
                             <h1 class="mb-4">Lets make your product and team success.</h1>
                             <p class="paragraph mb-4">As a product development company, we help businesses ideate, strategize, iterate, and launch their mobile and web apps while keeping cost, timelines, and objectives in mind. </p>
-                            <a href="#" class="theam-button black-btn">Build me a product</a>
+                            <a href="#" class="theam-button black-btn"><span>Build me a product</span></a>
                         </div>
                         <div class="col-md-6 align-self-center text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                             <img src="assets/images/startup-banner.png" class="img-fluid" alt="startup-banner-image">
@@ -108,12 +117,12 @@
         </section>
         <section class="pb-5">
             <div class="container">
-                <div class="col-md-10 mx-auto text-center mb-4 pb-1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                <div class="col-md-10 mx-auto text-center mb-4 pb-1" data-aos="fade-up">
                     <h3 class="text-center mb-4">Why work with us?</h3>
                     <p class="paragraph">We cover all the bits and pieces needed to develop top-notch, innovative digital products. From strategy to product design, including Front-end and Back-end services, we got your back. We code to very high standards and test continuously, which creates easy to maintain high-quality products. </p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">In-house like cooperation</p>
@@ -123,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">Open communication</p>
@@ -133,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">We build partnerships</p>
@@ -143,7 +152,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">Focused on business</p>
@@ -153,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">Scalable team</p>
@@ -163,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                         <div class="primary-card card">
                             <div class="card-header text-center bg-none border-0 border-line position-relative">
                                 <p class="fw-normal">Sharing knowledge</p>
@@ -174,17 +183,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-3 mb-5 text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-                    <a href="#" class="theam-button black-btn">Start a project</a>
+                <div class="mt-3 mb-5 text-center" data-aos="fade-up">
+                    <a href="#" class="theam-button black-btn"><span>Start a project</span></a>
                 </div>
             </div>
         </section>
         <section class="pb-5 mb-5">
             <div class="container">
-                <h3 class="text-center mb-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">Our process tested on over <br>100 of client projects.</h3>
+                <h3 class="text-center mb-5" data-aos="fade-up">Our process tested on over <br>100 of client projects.</h3>
                 <div class="process-steps">
                     <!-- <img src="assets/images/path-line.png" class="img-fluid mb-4 steps-path" alt="steps-path"> -->
-                    <div class="step-block left-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block left-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">1 Step</h2>
                             <img src="assets/images/step1.png" class="img-fluid mb-4" alt="steps-icon">
@@ -192,7 +201,7 @@
                             <p>we collect all the information about the project’s technical requirements and business goals.</p>
                         </div>
                     </div>
-                    <div class="step-block right-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block right-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">2 Step</h2>
                             <img src="assets/images/step2.png" class="img-fluid mb-4" alt="steps-icon">
@@ -200,7 +209,7 @@
                             <p>Based on the information collected in the first stage we do market research and development analysis to estimate project timeline and cost with our developers.</p>
                         </div>
                     </div>
-                    <div class="step-block left-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block left-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">3 Step</h2>
                             <img src="assets/images/step3.png" class="img-fluid mb-4" alt="steps-icon">
@@ -208,7 +217,7 @@
                             <p>If the estimation makes sense we send the official proposal and the contract with all the deliverables, timeline and cost breakdown.</p>
                         </div>
                     </div>
-                    <div class="step-block right-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block right-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">4 Step</h2>
                             <img src="assets/images/step4.png" class="img-fluid mb-4" alt="steps-icon">
@@ -216,7 +225,7 @@
                             <p>When it comes to developing apps, an agile approach is best suited. The requirements for the development may change throughout the project and we can tailor towards that.</p>
                         </div>
                     </div>
-                    <div class="step-block left-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block left-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">5 Step</h2>
                             <img src="assets/images/step3.png" class="img-fluid mb-4" alt="steps-icon">
@@ -224,7 +233,7 @@
                             <p>With many rounds of evaluation, we test functionality, performance, and case of navigation and make sure software runs with no bugs</p>
                         </div>
                     </div>
-                    <div class="step-block right-step d-flex" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    <div class="step-block right-step d-flex" data-aos="fade-up">
                         <div class="col-8 mx-auto text-center align-self-center">
                             <h2 class="steps">6 Step</h2>
                             <img src="assets/images/step4.png" class="img-fluid mb-4" alt="steps-icon">

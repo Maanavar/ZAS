@@ -20,8 +20,8 @@ $(document).ready(function () {
 	$("body").hover(
 		function () {
 			$(".cursorA").animate({
-				width: "40px",
-				height: "40px"
+				width: "15px",
+				height: "15px"
 			});
 		},
 		function () {
@@ -39,7 +39,9 @@ $(document).ready(function () {
 	$("div").hover(
 		function () {
 			$(".cursorA").css({
-				background: "none"
+				background: "white",
+        width: "30px",
+				height: "30px"
 			});
 		},
 		function () {
@@ -53,8 +55,7 @@ $(document).ready(function () {
 
 AOS.init({
 	offset: 80,
-	duration: 900,
-	delay:100,
+	duration: 1500,
 	// once: true,
 	easing: 'ease',
 });
@@ -63,29 +64,29 @@ AOS.init({
   });
 
 
-  function openNavbar() {
-    document.querySelector("#navbar").style.width = "80%";
-    document.querySelectorAll(".open")[0].style.opacity = 0;
-  }
-  function closeNavbar() {
-    document.querySelector("#navbar").style.width = "0";
-    document.querySelectorAll(".open")[0].style.opacity = 1;
-  }
+//   function openNavbar() {
+//     document.querySelector("#navbar").style.width = "80%";
+//     document.querySelectorAll(".open")[0].style.opacity = 0;
+//   }
+//   function closeNavbar() {
+//     document.querySelector("#navbar").style.width = "0";
+//     document.querySelectorAll(".open")[0].style.opacity = 1;
+//   }
   
-  jQuery('.navbar-toggler').on('click', function () {
-    jQuery(this).toggleClass('change');
-    if(jQuery(this).hasClass('change')) {
-      jQuery('.logo').attr('src', stickyLogoSrc);
-    }
-    else { 
-      if(jQuery(window).scrollTop() < 10) { 
-       jQuery('.logo').attr('src', initialLogoSrc);
-       if(jQuery('body').hasClass('page-template-opening-soon') || jQuery('body').hasClass('dark-header')) {
-          jQuery('.logo').attr('src', stickyLogoSrc);
-        }
-      }
-    }
-});
+//   jQuery('.navbar-toggler').on('click', function () {
+//     jQuery(this).toggleClass('change');
+//     if(jQuery(this).hasClass('change')) {
+//       jQuery('.logo').attr('src', stickyLogoSrc);
+//     }
+//     else { 
+//       if(jQuery(window).scrollTop() < 10) { 
+//        jQuery('.logo').attr('src', initialLogoSrc);
+//        if(jQuery('body').hasClass('page-template-opening-soon') || jQuery('body').hasClass('dark-header')) {
+//           jQuery('.logo').attr('src', stickyLogoSrc);
+//         }
+//       }
+//     }
+// });
 
 var span = document.querySelector(".typewriter span");
 var textArr = span.getAttribute("data-text").split(", "); 
