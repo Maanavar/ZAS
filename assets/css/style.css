@@ -1,6 +1,7 @@
 :root {
     --black-color:#021622;
-    --red-color:#EB1515;
+    /* --red-color:#EB1515; */
+    --red-color:#EF0044;
     --white-color:#ffffff; 
     --dark-green-color:#ffffff; 
     --light-blue-color:#F9FBFF;
@@ -366,10 +367,11 @@ footer a{
     height: 10rem;
     color: var(--black-color);
 }
-.multi-platform{padding: 5rem 0;}
+.multi-platform{padding: 6rem 0 8rem;}
 .primary-card{
-    background: var(--light-blue-color);
+    /* background: var(--light-blue-color); */
     border: 1px solid #F9FBFF;
+    background: transparent !important;
     border-radius: 16px;
     padding: 1.5rem;height: 100%;
 }
@@ -378,6 +380,7 @@ footer a{
     display: inline-block;
     margin-bottom: 0;
 }
+.what-wedo-card{border:1px solid #d5d5d5 !important;background: transparent !important;}
 .what-wedo-card .body-content {
     min-height: 130px;
 }
@@ -426,6 +429,19 @@ footer a{
 }
 .faq-items .accordion-item:not(:last-child){
     border-bottom: 1px solid #D9D9D9;
+}
+.accordion-button:after{
+    content: '\f106';
+    color: var(--red-color);
+    font-family: 'FontAwesome';
+    background-image: none;
+    transform: rotate(180deg);
+}
+.accordion-button:not(.collapsed)::after{
+    content: '\f107';
+    color: var(--red-color);
+    font-family: 'FontAwesome';
+    background-image: none;
 }
 .faq-items .accordion-item button{background-color: transparent;font-size: 18px;line-height:32px;padding: 1rem 1.5rem;color: var(--black-color);}
 .faq-items .accordion-item .accordion-body{padding-top: 0;}
@@ -540,7 +556,7 @@ footer a{
 .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   }
-  .custom-file-input {border-radius: 4px;background: var(--black-color);}
+  .custom-file-input {border-radius: 4px;}
   .file-upload  label{
     align-content: center;
     display: inline-block !important;
@@ -563,7 +579,8 @@ footer a{
     padding: 0.8rem 1rem;
     border-radius: 8px;
     text-align: center;
-    font-family: 'FontAwesome';
+    /* font-family: 'FontAwesome'; */
+    color: var(--black-color);
   }
   .custom-file-input:hover::before {
     border-color: black;
