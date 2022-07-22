@@ -237,7 +237,7 @@ button:focus{box-shadow: none !important;border-color:transparent}
     font-weight: 500;
     position: relative;
 }
-.navbar-nav li a:after,.navbar-nav li a.active:after,.main-menu .navbar-nav .dropdown-menu a:after{
+/* .navbar-nav li a:after,.navbar-nav li a.active:after,.main-menu .navbar-nav .dropdown-menu a:after{
     content: '';
     display: block;
     width: 0;
@@ -248,9 +248,9 @@ button:focus{box-shadow: none !important;border-color:transparent}
     position: absolute;
     bottom: -1.5rem;
     left: 0;
-}
-.main-menu .navbar-nav .dropdown-menu a.active,.offcanvas-body a.active{color:var(--red-color);}
-.navbar-nav li a:hover::after,.navbar-nav li a.active:after{width: 100%;}
+} */
+.main-menu .navbar-nav .dropdown-menu a.active,.offcanvas-body a.active,.navbar-nav li a.active{color:var(--red-color) !important;}
+/* .navbar-nav li a:hover::after,.navbar-nav li a.active:after{width: 100%;} */
 .navbar-nav li .dropdown-toggle::before{
     border: 0;
     content: '\f107';
@@ -366,14 +366,52 @@ button:focus{box-shadow: none !important;border-color:transparent}
 }
 .dropdown-menu li a:hover{background-color: transparent;}
 /* Footer */
-.footer-top{padding: 5rem 0;}
+.footer-top{
+    padding: 5rem 0;
+}
+.footer-top h2 a {
+    text-decoration: none;
+    position: relative;
+    z-index: 999;
+}
+.footer-top h2 a{
+    overflow: hidden;
+    display: inline;
+    transition: color .3s ease-in-out;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+footer a{text-decoration: none;color: var(--white-color);}
+footer .border-right:after {
+    content: '';
+    width: 1px ;
+    height: 100%;
+    background: var(--white-color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+
+a.link.color--white, a.link.white, button.link.color--white, button.link.white {
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+a.link--animated, button.link--animated {
+    overflow: hidden;
+    display: inline;
+}
+
+/* .footer-top{padding: 5rem 0;}
 footer a{
     color: var(--white-color);
     text-decoration: none;
 }
 .footer-top .border-right{border-right: 1px solid #D9D9D9;}
 .footer-bottom p{color: var(--white-color);opacity: 0.5; font-size: 14px;}
-.footer-bottom ul li{list-style-type: none;display: inline-block; margin:0 0.5rem;}
+.footer-bottom ul li{list-style-type: none;display: inline-block; margin:0 0.5rem;} */
 /* Home-page */
 .who-we-are{margin-bottom: 2rem;}
 .who-we-are p{opacity: 0.7;}
