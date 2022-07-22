@@ -894,7 +894,15 @@ a.link-background--orange:focus span.inner, a.link-background--orange:hover span
 }
 .team-card h5{max-width: 70%;margin: auto;}
 .team-card p{font-size: 14px;}
-
+.team-card .card-header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-card .card-body a{color: var(--red-color);
+text-decoration: none;
+}
 /* Steps start up */
 .process-steps{
     max-width: 1000px;
