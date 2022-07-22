@@ -646,7 +646,6 @@ a.link-background--orange:focus span.inner, a.link-background--orange:hover span
     /* border-right: solid var(--black-color) 10px;  */
     position: relative;
     animation: cursor 1s ease-in-out infinite;
-    /* background: linear-gradient(to right, #ef0044 0%, red 100%); */
     background: linear-gradient(to right, #ef0044 0%, red 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1015,6 +1014,9 @@ table tr th,table tr td{padding: 0.8rem 1.2rem !important;font-size: 18px;font-w
     .faq-items{padding: 1rem 0;}
     .footer-top {
         padding: 5rem 0 0rem;
+    }
+    a.link.with-padding span.inner:after, a.link.with-padding span.inner:before, button.link.with-padding span.inner:after, button.link.with-padding span.inner:before {
+        bottom: 8px;
     }
     .main-banner h1 br{display: block;}
     br{display: none;}
