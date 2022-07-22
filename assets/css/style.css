@@ -467,7 +467,7 @@ footer a{
 .primary-card .card-footer ul li{padding: 0.15rem 0;}
 
 .experts {
-    background: var(--light-blue-color);
+    background: var(--white-color);
     border-radius: 12px;
     padding: 1rem 1.5rem;
     text-align: center;
