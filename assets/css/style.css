@@ -1015,6 +1015,7 @@ table tr th,table tr td{padding: 0.8rem 1.2rem !important;font-size: 18px;font-w
     .footer-top {
         padding: 5rem 0 0rem;
     }
+    .show-desktop,.footer-logo{display: none !important;}
     a.link.with-padding span.inner:after, a.link.with-padding span.inner:before, button.link.with-padding span.inner:after, button.link.with-padding span.inner:before {
         bottom: 8px;
     }
