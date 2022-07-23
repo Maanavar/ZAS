@@ -1228,6 +1228,9 @@ table tr td {
     display: none;
   }
 }
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+  .enterprise-banner{margin-top: 3rem;}
+}
 @media (max-width: 991px) {
   .show-desktop {
     display: none;
