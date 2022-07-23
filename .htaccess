@@ -1,5 +1,10 @@
-RewriteEngine on
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^in-en$ index.html
+
+RewriteRule ^in-en/request-for-services$ request-for-services.html 
+RewriteRule ^in-en/services/dedicated-team-on-demand$ dedicated-team-on-demand.html 
+RewriteRule ^in-en/services/enterprise-app-development$ enterprise-app-development.html 
+RewriteRule ^in-en/services/startup-app-development$ startup-app-development.html 
+RewriteRule ^in-en/us$ us.html 

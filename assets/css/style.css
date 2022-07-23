@@ -456,7 +456,7 @@ button:focus {
 }
 .offcanvas-body a,
 .offcanvas-body .navbar-nav li a {
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 700;
   color: var(--black-color);
   display: block;
@@ -1126,6 +1126,7 @@ button.link-background--orange:hover span.inner {
   cursor: pointer;
   width: 100%;
   border: 1px solid var(--black-color);
+  background: var(--white-color);
   padding: 0.8rem 1rem;
   border-radius: 8px;
   text-align: center;
@@ -1263,8 +1264,8 @@ table tr td {
   }
   .offcanvas-body a,
   .offcanvas-body .navbar-nav li a {
-    font-size: 30px;
-    padding: 0.4rem 0;
+    font-size: 28px;
+    padding: 0.25rem 0;
   }
   li.dropdown .dropdown-toggle {
     padding-right: 2rem;
@@ -1369,7 +1370,7 @@ table tr td {
   button.link.with-padding span.inner:before {
     bottom: 8px;
   }
-  .main-banner h1 br {
+  .main-banner h1 br,.menu-contact br {
     display: block;
   }
   br {
@@ -1406,4 +1407,5 @@ table tr td {
   .footer-top h5 a {
     font-size: 14px;
   }
+  .custom-file-input{width: 100%;}
 }
