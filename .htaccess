@@ -1,7 +1,10 @@
 
 Options +FollowSymLinks
 RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 RewriteRule ^in-en$ index.html
+
 
 RewriteRule ^in-en/request-for-services$ request-for-services.html 
 RewriteRule ^in-en/services/dedicated-team-on-demand$ dedicated-team-on-demand.html 
